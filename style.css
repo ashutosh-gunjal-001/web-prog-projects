@@ -1,0 +1,352 @@
+.buddy {
+    font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6096ba, #ddf2eb);
+    color: #1a0e29;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 2rem auto 4rem;
+    padding: 0 2rem;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.headline::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fd5 50%, #3498db 50%);
+}
+
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: #1a0e29;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.emphasis {
+    font-weight: 600;
+}
+
+.dashboard-preview {
+    max-width: 1000px;
+    margin: 4rem auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.7);
+    overflow: hidden;
+    background-color: #343a40;
+    color: #f9db6d;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c6cdd4;
+    color: #363531;
+    padding: 0.75rem 1.5rem;
+}
+.dash-header {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dashboard-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dashboard-header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dashboard-sidebar {
+    width: 80px;
+    background-color: #495057;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #f5f5ef;
+}
+
+.dashboard-content {
+    margin-left: 80px;
+    padding: 1.5rem 2rem;
+    min-height: 500px;
+}
+
+.dashboard-top-nav {
+    font-size: 40px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.dashboard-greeting {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-subtitle {
+    color: #acafae;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-sidebar {
+    background-color: #2c2f33;
+    color: #ffffff;
+    width: 70px;
+    padding: 15px;
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.assignment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.assignment-list li {
+    margin: 10px 0;
+}
+
+.assignment-link {
+    display: block;
+    padding: 10px;
+    background: #2c2f33;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.assignment-link:hover {
+    background: #c6cdd4;
+    color: black;
+}
+
+.dash-section {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dash-box {
+    flex: 1;
+    border: 1px solid #f5f5ef;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.dash-label {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ddf2eb;
+}
+
+.dash-info {
+    color: #d7dedc;
+    font-size: 0.85rem;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.board-section {
+    border: 1px solid #f5f5ef;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.board-title {
+    color: #d7dedc;
+    font-size: 0.85rem;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace; 
+    margin-bottom: 25px;
+}
+
+.clg {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ddf2eb;
+}
+.sir {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ddf2eb;
+}
+.slot {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ddf2eb;
+}
+
+.info {
+    font-size: 17px;
+}
+
+footer {
+    height: 60px;
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    font-size: 20px;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #1a0e29;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.theme-toggle {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+body.dark-mode, .dashboard-preview.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* .theme-toggle:hover {
+    background: white;
+} */
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #87b9bc;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+

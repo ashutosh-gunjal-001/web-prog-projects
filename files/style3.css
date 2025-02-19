@@ -1,0 +1,54 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    z-index: calc(10 - var(--i));
+    animation-name: block-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--i)*0.03s);
+    animation-duration: 3s;
+}
+
+.block2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    z-index: calc(10 - var(--i));
+    animation-name: block-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--i)*0.03s + 0.5s);
+    animation-duration: 3s;
+}
+
+.block3 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    z-index: calc(10 - var(--i));
+    animation-name: block-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(var(--i)*0.03s + 2.3s);
+    animation-duration: 3s;
+}
+
+@keyframes block-animation {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
