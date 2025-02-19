@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(196, 238, 255);
+}
+
+#block {
+    height: 50px;
+    width: 75px;
+    margin: 20px;
+    background-color: rgb(228, 79, 101);
+    border: 2px solid black;
+    border-radius: 7px;
+    animation-name: block-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes block-animation {
+    0% {
+        transform: translateX(0px)translateY(0px)rotate(-360deg);
+    }
+    25% {
+        transform: translateX(500px)translateY(0px)rotate(360deg);
+    }
+    50% {
+        transform: translateX(500px)translateY(500px)rotate(-360deg);
+    }
+    75% {
+        transform: translateX(0px)translateY(500px)rotate(360deg);
+    }
+    100% {
+        transform: translateX(0px)translateY(0px)rotate(-360deg);
+    }
+}

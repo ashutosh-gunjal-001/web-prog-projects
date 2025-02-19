@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess Board</title>
+        <style>
+            .chessboard 
+            {
+                display: grid;
+                grid-template-columns: repeat(8, 60px);
+                grid-template-rows: repeat(8, 60px); 
+                width: 480px;
+                height: 480px;
+                border: 2px solid black;
+            }
+
+            .square 
+            {
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 36px; 
+            }
+
+            .dark 
+            {
+                background-color: #00a6ac;
+            }
+
+            .light 
+            {
+                background-color: #eeeed2;
+            }
+
+            .chessboard .square:nth-child(even):nth-child(odd),
+            .chessboard .square:nth-child(odd):nth-child(even) 
+            {
+                background-color: #769656; 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="chessboard">
+            <!-- 1st row for white pieces) -->
+            <div class="square light">&#9814;</div>
+            <div class="square dark">&#9816;</div>
+            <div class="square light">&#9815;</div>
+            <div class="square dark">&#9813;</div>
+            <div class="square light">&#9812;</div>
+            <div class="square dark">&#9815;</div>
+            <div class="square light">&#9816;</div>
+            <div class="square dark">&#9814;</div>
+
+            <!-- 2nd row for white pawns -->
+            <div class="square dark">&#9817;</div>
+            <div class="square light">&#9817;</div>
+            <div class="square dark">&#9817;</div>
+            <div class="square light">&#9817;</div>
+            <div class="square dark">&#9817;</div>
+            <div class="square light">&#9817;</div>
+            <div class="square dark">&#9817;</div>
+            <div class="square light">&#9817;</div>
+
+            <!-- empty boxes -->
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            
+            <!-- empty boxes -->
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            
+            <!-- empty boxes -->
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            
+            <!-- empty boxes -->
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            <div class="square dark"></div>
+            <div class="square light"></div>
+            
+            <!-- 7th row for black pieces -->
+            <div class="square light">&#9823;</div>
+            <div class="square dark">&#9823;</div>
+            <div class="square light">&#9823;</div>
+            <div class="square dark">&#9823;</div>
+            <div class="square light">&#9823;</div>
+            <div class="square dark">&#9823;</div>
+            <div class="square light">&#9823;</div>
+            <div class="square dark">&#9823;</div>
+
+            <!-- 8th row for black pieces -->
+            <div class="square dark">&#9820;</div>
+            <div class="square light">&#9822;</div>
+            <div class="square dark">&#9821;</div>
+            <div class="square light">&#9819;</div>
+            <div class="square dark">&#9818;</div>
+            <div class="square light">&#9821;</div>
+            <div class="square dark">&#9822;</div>
+            <div class="square light">&#9820;</div>
+        </div>
+    </body>
+</html>
